@@ -1,0 +1,8 @@
+.size-container {
+  display: flex;
+  align-items: center;
+}
+
+.size-choice {
+  margin-left: 10px;
+}

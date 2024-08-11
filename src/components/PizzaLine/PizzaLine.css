@@ -1,0 +1,22 @@
+.pizza-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.pizza-line h2 {
+  margin-bottom: 0px;
+}
+.edit-button {
+  background-color: #df6f06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.edit-button:hover {
+  background-color: #c55b05;
+}

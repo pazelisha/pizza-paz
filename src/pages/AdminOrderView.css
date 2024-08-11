@@ -1,0 +1,16 @@
+.accept-order-button {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  width: 100px;
+  height: 70px;
+  background-color: #df6f06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.accept-order-button:hover {
+  background-color: #c55b05;
+}

@@ -1,0 +1,33 @@
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  width: 100px;
+}
+
+.admin-page-title {
+  position: absolute;
+  top: 15%;
+  left: 45%;
+}
+
+.admin-order-list {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+.admin-order-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 800px;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
+
+.admin-order-details:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}

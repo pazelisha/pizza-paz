@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import OrderPage from "./pages/OrderPage";
+import CreatePizzaPage from "./pages/CreatePizzaPage";
+import AdminOrdersPage from "./pages/AdminOrdersPage";
+import AdminOrderView from "./pages/AdminOrderView";
+import { OrderProvider } from "./OrderProvider";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <OrderProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<OrderPage />}></Route>
+          <Route path="/corder" element={<OrderPage />}></Route>
+          <Route path="/cpizza" element={<CreatePizzaPage />}></Route>
+          <Route path="/aorder" element={<AdminOrdersPage />}></Route>
+          <Route path="/avieworder" element={<AdminOrderView />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </OrderProvider>
   );
 }
 

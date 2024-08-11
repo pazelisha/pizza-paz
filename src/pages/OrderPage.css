@@ -1,0 +1,76 @@
+.page-title {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+}
+.page-title h1 {
+  margin-right: 20px;
+}
+.page-title input {
+  text-align: center;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  width: 100px;
+}
+
+.list-container {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+.gradient-circle {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 250vh;
+  background: linear-gradient(to top left, #ee3a43, #882126);
+  clip-path: ellipse(35% 35% at 100% 100%);
+  z-index: -1;
+}
+.new-pizza-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  width: 800px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.new-pizza-button:hover {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+.plus-circle {
+  position: absolute;
+  right: 93.5%;
+  width: 40px;
+  height: 40px;
+  line-height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: #df6f06;
+}
+.send-order-button {
+  position: absolute;
+  left: 45%;
+  width: 100px;
+  height: 70px;
+  background-color: #df6f06;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.send-order-button:hover {
+  background-color: #c55b05;
+}
